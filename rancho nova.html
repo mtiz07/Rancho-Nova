@@ -19,8 +19,580 @@
     }
 
     body{
-      background:#F8F9FA;
+      <html lang="es">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rancho Nova | Ganadería Premium</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#0B0B0F;
+      color:#F5F5F7;
+      overflow-x:hidden;
+    }
+
+    header{
+      position:fixed;
+      width:100%;
+      top:0;
+      left:0;
+      z-index:1000;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:rgba(255,255,255,0.9);
+      backdrop-filter:blur(10px);
+      box-shadow:0 2px 10px rgba(11,11,15,0.85);
+    }
+
+    .logo{
+      font-size:2rem;
+      font-weight:800;
       color:#1B4332;
+    }
+
+    nav a{
+      text-decoration:none;
+      margin-left:30px;
+      color:#1B4332;
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#588157;
+    }
+
+    .hero{
+      height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+      url('https://images.unsplash.com/photo-1500595046743-cd271d694d30?q=80&w=1974&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      padding:0 8%;
+      color:white;
+    }
+
+    .hero-content{
+      max-width:700px;
+    }
+
+    .hero h1{
+      font-size:4.5rem;
+      line-height:1.1;
+      margin-bottom:25px;
+      font-weight:800;
+    }
+
+    .hero p{
+      font-size:1.2rem;
+      line-height:1.8;
+      margin-bottom:40px;
+      color:#f1f1f1;
+    }
+
+    .buttons{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:16px 30px;
+      border:none;
+      border-radius:12px;
+      cursor:pointer;
+      font-size:1rem;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .btn-primary{
+      background:#588157;
+      color:white;
+    }
+
+    .btn-primary:hover{
+      background:#3A5A40;
+      transform:translateY(-4px);
+    }
+
+    .btn-secondary{
+      background:white;
+      color:#1B4332;
+    }
+
+    .btn-secondary:hover{
+      transform:translateY(-4px);
+    }
+
+    section{
+      padding:120px 8%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:70px;
+    }
+
+    .section-title h2{
+      font-size:3rem;
+      margin-bottom:20px;
+    }
+
+    .section-title p{
+      max-width:700px;
+      margin:auto;
+      color:#555;
+      line-height:1.8;
+    }
+
+    .about{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:60px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:24px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .about-text h3{
+      font-size:2rem;
+      margin-bottom:20px;
+    }
+
+    .about-text p{
+      line-height:1.9;
+      color:#555;
+      margin-bottom:20px;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#1A1A22;
+      padding:35px;
+      border-radius:24px;
+      transition:0.3s;
+      box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card h3{
+      margin-bottom:18px;
+      font-size:1.4rem;
+    }
+
+    .card p{
+      line-height:1.8;
+      color:#666;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .gallery img{
+      width:100%;
+      height:320px;
+      object-fit:cover;
+      border-radius:20px;
+      transition:0.3s;
+    }
+
+    .gallery img:hover{
+      transform:scale(1.03);
+    }
+
+    .technology{
+      background:#1B4332;
+      color:white;
+      border-radius:30px;
+      padding:70px;
+    }
+
+    .technology h2{
+      margin-bottom:30px;
+      font-size:3rem;
+    }
+
+    .technology p{
+      line-height:2;
+      color:#ddd;
+      max-width:900px;
+    }
+
+    .testimonials{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:30px;
+    }
+
+    .testimonial{
+      background:#1A1A22;
+      padding:35px;
+      border-radius:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    .testimonial p{
+      line-height:1.8;
+      color:#A1A1AA;
+      margin-bottom:20px;
+    }
+
+    .testimonial h4{
+      color:#1B4332;
+    }
+
+    .contact{
+      background:#DAD7CD;
+      border-radius:30px;
+      padding:70px;
+    }
+
+    form{
+      display:grid;
+      gap:20px;
+      max-width:700px;
+      margin:auto;
+    }
+
+    input, textarea{
+      padding:18px;
+      border:none;
+      border-radius:12px;
+      font-size:1rem;
+    }
+
+    textarea{
+      min-height:160px;
+      resize:none;
+    }
+
+    footer{
+      background:#1B4332;
+      color:white;
+      padding:40px 8%;
+      text-align:center;
+      margin-top:100px;
+    }
+
+    footer p{
+      color:#ddd;
+      margin-top:10px;
+    }
+
+    @media(max-width:900px){
+
+      .hero h1{
+        font-size:3rem;
+      }
+
+      nav{
+        display:none;
+      }
+
+      .technology{
+        padding:40px;
+      }
+
+      .technology h2{
+        font-size:2rem;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">Rancho Nova</div>
+
+  <nav>
+    <a href="#about">Nosotros</a>
+    <a href="#services">Producción</a>
+    <a href="#gallery">Galería</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+
+</header>
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <h1>
+      Ganadería Inteligente del Futuro
+    </h1>
+
+    <p>
+      Tecnología, genética premium y producción sustentable para una nueva generación agropecuaria.
+    </p>
+
+    <div class="buttons">
+      <button class="btn btn-primary">
+        Conocer Rancho
+      </button>
+
+      <button class="btn btn-secondary">
+        Ver Producción
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="about">
+
+  <div class="section-title">
+    <h2>Sobre Nosotros</h2>
+
+    <p>
+      Rancho Nova combina tradición ganadera con innovación tecnológica para ofrecer la máxima calidad en producción bovina.
+    </p>
+  </div>
+
+  <div class="about">
+
+    <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?q=80&w=1974&auto=format&fit=crop">
+
+    <div class="about-text">
+
+      <h3>Excelencia genética y producción sustentable</h3>
+
+      <p>
+        Nuestro rancho cuenta con tecnología avanzada para monitoreo animal, alimentación inteligente y control de salud en tiempo real.
+      </p>
+
+      <p>
+        Nos enfocamos en bienestar animal, calidad premium y procesos agroindustriales modernos.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="services">
+
+  <div class="section-title">
+
+    <h2>Producción Ganadera</h2>
+
+    <p>
+      Infraestructura moderna y procesos inteligentes para maximizar calidad y eficiencia.
+    </p>
+
+  </div>
+
+  <div class="services">
+
+    <div class="card">
+      <h3>🐄 Ganado Premium</h3>
+
+      <p>
+        Selección genética avanzada para garantizar la mejor calidad bovina.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🌱 Alimentación Natural</h3>
+
+      <p>
+        Procesos sustentables y alimentación balanceada de alta calidad.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>📡 Monitoreo Inteligente</h3>
+
+      <p>
+        Tecnología IA y sensores para control de salud y rastreo animal.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🚜 Agroindustria Moderna</h3>
+
+      <p>
+        Automatización y eficiencia para producción de alto rendimiento.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="gallery">
+
+  <div class="section-title">
+
+    <h2>Galería del Rancho</h2>
+
+    <p>
+      Conoce nuestras instalaciones, ganado premium y tecnología agropecuaria.
+    </p>
+
+  </div>
+
+  <div class="gallery">
+
+    <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?q=80&w=1974&auto=format&fit=crop">
+
+    <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?q=80&w=1974&auto=format&fit=crop">
+
+    <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?q=80&w=1974&auto=format&fit=crop">
+
+    <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?q=80&w=1974&auto=format&fit=crop">
+
+  </div>
+
+</section>
+
+<section>
+
+  <div class="technology">
+
+    <h2>Tecnología Ganadera e IA</h2>
+
+    <p>
+      Implementamos inteligencia artificial, monitoreo satelital, drones agrícolas y automatización inteligente para optimizar salud, producción y sostenibilidad del rancho.
+    </p>
+
+  </div>
+
+</section>
+
+<section>
+
+  <div class="section-title">
+
+    <h2>Testimonios</h2>
+
+    <p>
+      Productores y clientes confían en nuestra calidad y experiencia.
+    </p>
+
+  </div>
+
+  <div class="testimonials">
+
+    <div class="testimonial">
+
+      <p>
+        “Rancho Nova representa el futuro de la ganadería moderna.”
+      </p>
+
+      <h4>— Carlos Méndez</h4>
+
+    </div>
+
+    <div class="testimonial">
+
+      <p>
+        “La calidad genética y tecnológica es impresionante.”
+      </p>
+
+      <h4>— Alejandro Ruiz</h4>
+
+    </div>
+
+    <div class="testimonial">
+
+      <p>
+        “Producción sustentable y atención profesional de primer nivel.”
+      </p>
+
+      <h4>— Luis Herrera</h4>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="contact">
+
+  <div class="contact">
+
+    <div class="section-title">
+
+      <h2>Contacto</h2>
+
+      <p>
+        Ponte en contacto con nuestro equipo agropecuario.
+      </p>
+
+    </div>
+
+    <form>
+
+      <input type="text" placeholder="Nombre">
+
+      <input type="email" placeholder="Correo electrónico">
+
+      <textarea placeholder="Escribe tu mensaje..."></textarea>
+
+      <button class="btn btn-primary">
+        Enviar mensaje
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <h2>Rancho Nova</h2>
+
+  <p>
+    © 2026 Rancho Nova · Ganadería Premium Inteligente
+  </p>
+
+</footer>
+
+</body>
+</html>
       overflow-x:hidden;
     }
 
